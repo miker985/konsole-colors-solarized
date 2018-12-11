@@ -83,6 +83,18 @@ task :dark do
   write_colorscheme("Solarized Dark", colors)
 end
 
+task:'update-files' => [:dark, :light] do
+    colorscheme_dir = File.expand_path "~/.local/share/konsole/"
+    if Dir.exist? colorscheme_dir
+        require "fileutils"
+        ["Dark", "Light"].each do |theme|
+            fname = "Solarized #{theme}.colorscheme"
+            FileUtils::copy_file(File.join(__dir__, fname),
+                                 File.join(colorscheme_dir, fname))
+        end
+    end
+end
+
 task :default => [:dark, :light]
 
 def write_colorscheme(colorscheme, colors)

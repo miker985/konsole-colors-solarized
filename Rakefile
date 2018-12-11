@@ -75,7 +75,7 @@ task :dark do
     'BackgroundIntense' => SOLARIZED[:base02],
     'Foreground'        => SOLARIZED[:base0],
     'ForegroundIntense' => SOLARIZED[:base1],
-    'Color6Intense'     => [66, 202, 202],  # teal
+    'Color6Intense'     => [62, 191, 191],  # teal
   )
 
   write_colorscheme("Solarized Dark", colors)

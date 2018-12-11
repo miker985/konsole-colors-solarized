@@ -17,6 +17,8 @@
 #cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
 #green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
 
+# See also `man dir_colors`
+
 SOLARIZED = {
   :base03   => [0,    43,   54  ],
   :base02   => [7,    54,   66  ],
@@ -61,6 +63,7 @@ task :light do
     'BackgroundIntense' => SOLARIZED[:base2],
     'Foreground'        => SOLARIZED[:base00],
     'ForegroundIntense' => SOLARIZED[:base01],
+    'Color6Intense'     => [72, 223, 223],  # teal
   )
 
   write_colorscheme("Solarized Light", colors)
@@ -72,6 +75,7 @@ task :dark do
     'BackgroundIntense' => SOLARIZED[:base02],
     'Foreground'        => SOLARIZED[:base0],
     'ForegroundIntense' => SOLARIZED[:base1],
+    'Color6Intense'     => [66, 202, 202],  # teal
   )
 
   write_colorscheme("Solarized Dark", colors)
@@ -92,7 +96,7 @@ def write_colorscheme(colorscheme, colors)
 
     f << [
       "[General]",
-      "Description=#{colorscheme}",
+      "Description=#{colorscheme} (miker985)",
       "Opacity=1"
     ].join("\n")
   end

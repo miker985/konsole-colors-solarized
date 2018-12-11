@@ -9,6 +9,9 @@ Solarized terminal theme for KDE 4's Konsole terminal client. This was adapted
 from the [Xresources file](https://github.com/altercation/solarized/blob/9f1ba40686ccbf54f10851d4f1a14830fa543ae9/xresources-colors-solarized/Xresources) from March 31, 2011 and so contains the same color 
 designations present there.
 
+Modified by miker985
+* Updated **Color6Intense** to differ from Color4Intense so that symlinks "pop" from regular files/dirs
+
 Installation
 ------------
 1. Copy the colorscheme files to ~/.kde4/share/apps/konsole/. On your system this may be ~/.kde/ instead of ~/.kde4/.

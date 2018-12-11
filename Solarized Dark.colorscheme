@@ -51,7 +51,7 @@ Color=42,161,152
 Transparency=false
 
 [Color6Intense]
-Color=147,161,161
+Color=66,202,202
 Transparency=false
 
 [Color7]
@@ -79,5 +79,5 @@ Color=147,161,161
 Transparency=false
 
 [General]
-Description=Solarized Dark
+Description=Solarized Dark (miker985)
 Opacity=1

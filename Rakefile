@@ -55,7 +55,7 @@ COMMON = {
   # sticky other writable/sticky writable BACKGROUND
   'Color2'            => SOLARIZED[:green],
   # executable FOREGROUND (also - prompt color)
-  'Color2Intense'     => SOLARIZED[:base01],
+  'Color2Intense'     => [66, 212, 92],  # brighter green; not too bright
   # named pipe FOREGROUND/set gid BACKGROUND
   'Color3'            => SOLARIZED[:yellow],
   # block device/character device FOREGROUND
@@ -64,7 +64,7 @@ COMMON = {
   # sticky BACKGROUND
   'Color4'            => SOLARIZED[:blue],
   # directory FOREGROUND
-  'Color4Intense'     => SOLARIZED[:base0],
+  'Color4Intense'     => SOLARIZED[:blue],
   # no obvious use
   'Color5'            => SOLARIZED[:magenta],
   # socket/door FOREGROUND

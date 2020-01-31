@@ -38,22 +38,44 @@ SOLARIZED = {
   :green    => [133,  153,  0   ],
 }
 
+
+# Descriptions relevant to files using default `LS_COLORS` provided by `dircolors`
+# names provided are output lines from print-terminal-colors (in this directory)
+#
 COMMON = {
+  # set gid, ca (???), sticky other writable FOREGROUND
+  # named pipe/block device/character device/orphan symlink BACKGROUND
   'Color0'            => SOLARIZED[:base02],
+  # no obvious use
   'Color0Intense'     => SOLARIZED[:base03],
+  # set uid/ca BACKGROUND
   'Color1'            => SOLARIZED[:red],
+  # orphan symlink FOREGROUND
   'Color1Intense'     => SOLARIZED[:orange],
+  # sticky other writable/sticky writable BACKGROUND
   'Color2'            => SOLARIZED[:green],
+  # executable FOREGROUND (also - prompt color)
   'Color2Intense'     => SOLARIZED[:base01],
+  # named pipe FOREGROUND/set gid BACKGROUND
   'Color3'            => SOLARIZED[:yellow],
+  # block device/character device FOREGROUND
   'Color3Intense'     => SOLARIZED[:base00],
+  # other writable FOREGROUND
+  # sticky BACKGROUND
   'Color4'            => SOLARIZED[:blue],
+  # directory FOREGROUND
   'Color4Intense'     => SOLARIZED[:base0],
+  # no obvious use
   'Color5'            => SOLARIZED[:magenta],
+  # socket/door FOREGROUND
   'Color5Intense'     => SOLARIZED[:violet],
+  # no obvious use
   'Color6'            => SOLARIZED[:cyan],
+  # symlink FOREGROUND
   'Color6Intense'     => SOLARIZED[:base1],
+  # set uid/sticky FOREGROUND
   'Color7'            => SOLARIZED[:base2],
+  # no obvious use
   'Color7Intense'     => SOLARIZED[:base3],
 }
 

@@ -89,7 +89,7 @@ task :light do
     'Color3Intense'     => [197, 197, 96],  # yellow
   )
 
-  write_colorscheme("Solarized Light", colors)
+  write_colorscheme("Solarized-Light-miker985", colors)
 end
 
 task :dark do
@@ -102,7 +102,7 @@ task :dark do
     'Color3Intense'     => [202, 202, 100],  # yellow
   )
 
-  write_colorscheme("Solarized Dark", colors)
+  write_colorscheme("Solarized-Dark-miker985", colors)
 end
 
 task:'update-files' => [:dark, :light] do
@@ -110,7 +110,7 @@ task:'update-files' => [:dark, :light] do
     if Dir.exist? colorscheme_dir
         require "fileutils"
         ["Dark", "Light"].each do |theme|
-            fname = "Solarized #{theme}.colorscheme"
+            fname = "Solarized-#{theme}-miker985.colorscheme"
             FileUtils::copy_file(File.join(__dir__, fname),
                                  File.join(colorscheme_dir, fname))
         end
